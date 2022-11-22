@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    text-align: center;
+    background-color: pink;
+}
+h1{
+    background-color: paleturquoise;
+    margin-bottom:2rem;
+    padding:0.5rem;
+}
+button{
+    padding:0.3rem;
+    background-color: rgb(7, 219, 7);
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 0.5rem;
+    margin:0.5rem;
+}
+button:hover{
+    scale:1.1;
+    transition:.5s;
+}
+
+legend {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+i{
+    margin-left:1rem;
+}
+
+.input_areas {
+    text-align:left;
+    padding: 2rem;
+    align-items: center;
+    border-style: solid;
+    display: inline-grid;
+    grid-template-columns: repeat(2, min(10rem, 300px));
+    grid-template-rows: 2rem 2rem 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,max(15rem,400px));
+    gap: 3rem;
+    background-color: white;
+    border-style: solid;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.card {
+    position:relative;
+    border-style: solid;
+    border-radius: 0.5rem;
+    background-color: turquoise;
+    padding: 1rem;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 8rem max(10rem,200px);
+    text-align: left;
+    gap:0.2rem;
+}
+.card span{
+    position: absolute;
+    right:0.3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+    background-color: rgb(10, 10, 10, 0.5);
+    left: 0;
+    top: 0;
+}
+
+form {
+    border-radius: 0.5rem;
+    margin: 5% 20%;
+    background-color:white;
+    
+}
+
+section {
+    position: relative;
+}
+legend{
+    margin-bottom:0.5rem;
+    padding:1rem;
+}
+
+#readStatusOptions{
+    display:grid;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    color: #aaaaaa;
+    right: 0.2rem;
+    border-radius: 100%;
+    margin-top: 0.3rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    background-color: rgb(10, 10, 10, 0.1);
+    font-weight: bold;
+}
+
+.close:hover {
+    background-color: rgb(10, 10, 10, 0.5);
+    scale: 1.2;
+    color: white;
+}

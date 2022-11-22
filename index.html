@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Library Of Books</h1>
+    <div class="cards">
+
+    </div>
+    <button id="newBook">Add Book</button>
+    <div id="modal">
+        
+        <form action="submit">
+            
+            <section>
+                <span class="close">&times;</span>
+                <legend>Book Info</legend>
+                
+                <div class="input_areas">  
+                    <label for="book_title">Book Title:</label>
+                    <input type="text" name="book_title" id="book_title" required>
+                    <label for="book_author">Book Author:</label>
+                    <input type="text" name="book_author" id="book_author" required>
+                    <label for="number_of_pages">Number of Pages:</label>
+                    <input type="tel" name="number_of_pages" id="number_of_pages" pattern="(\d{1-10})" required>
+                    <div>Read Status</div>
+                    <div id="readStatusOptions">
+                        <div>
+                            <input type="radio" id="have_read" name="read_status" value="true">
+                            <label for="have_read">Have Read</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="havent_read" name="read_status" value="false">
+                            <label for="havent_read">Haven't Read</label>
+                        </div>
+                    </div>
+                </div>       
+            </section>
+            <button type="submit">Press me!</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
